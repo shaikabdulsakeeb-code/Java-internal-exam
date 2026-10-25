@@ -1,0 +1,37 @@
+:root {
+  --ink: #11152b;
+  --muted: #66718b;
+  --line: #e4e7f1;
+  --paper: #f7f8ff;
+  --navy: #171837;
+  --blue: #6c63ff;
+  --mint: #4fe0c4;
+  --code: #16152f;
+  --shadow: 0 16px 40px rgba(40, 35, 105, .10);
+}
+
+.sidebar { background: linear-gradient(165deg, #171837 0%, #252153 52%, #141a3b 100%); border-right: 0; }
+.sidebar .brand { color: #fff; }
+.sidebar .accent { color: #72f1d4; }
+.sidebar .brand-mark { background: linear-gradient(135deg, #776dff, #4fe0c4); box-shadow: 0 8px 22px #0004; }
+.progress-card { background: #ffffff12; border-color: #ffffff1c; }
+.progress-top { color: #e9edff; }
+.progress-top strong { color: #76f0d4; }
+.progress-track { background: #ffffff20; }
+.progress-track i { background: linear-gradient(90deg, #6c63ff, #4fe0c4); }
+.progress-card p, .side-note { color: #afb8da; }
+.topic-button { color: #bec6e8; }
+.topic-button:hover { background: #ffffff10; color: #fff; }
+.topic-button.active { background: linear-gradient(105deg, #6c63ff, #4a80ef); box-shadow: 0 10px 20px #09091f55; }
+.topbar { background: #fffffff0; }
+.hero { background: radial-gradient(circle at 79% 22%, #d8d7ff 0, transparent 30%), radial-gradient(circle at 18% 83%, #d7fff6 0, transparent 23%); }
+.primary-button { background: linear-gradient(100deg, #665df5, #8a55ec); box-shadow: 0 12px 24px #6c63ff46; }
+.hero-panel { background: linear-gradient(135deg, #201d4b, #172f57 60%, #19435b); box-shadow: 0 22px 44px #28215e38; }
+.orb-one { background: #9272ff; }
+.orb-two { background: #4fe0c4; }
+.concept { background: #eeefff; color: #594fd3; }
+.question-number { background: #ecebff; color: #5b51df; }
+.copy-button:hover { background: #e8e6ff; color: #554add; }
+.code-wrap { background: linear-gradient(135deg, #17152f, #202251); }
+footer { background: #171837; color: #c5cbe8; border: 0; }
+footer span { color: #73efd3; }

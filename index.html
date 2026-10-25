@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Java Study Desk · Internal Prep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#top" aria-label="Java Study Desk home">
+          <span class="brand-mark">J</span><span>java<span class="accent">.</span>desk</span>
+        </a>
+        <div class="progress-card">
+          <div class="progress-top"><span>Your progress</span><strong id="progressText">0 / 45</strong></div>
+          <div class="progress-track"><i id="progressBar"></i></div>
+          <p>Mark a question done when you can solve it without looking.</p>
+        </div>
+        <nav class="topic-nav" id="topicNav" aria-label="Java topics"></nav>
+        <p class="side-note">Prepared from your internal-exam programs · Java 11</p>
+      </aside>
+
+      <main>
+        <header class="topbar" id="top">
+          <button class="menu-button" id="menuButton" aria-label="Open topics" aria-expanded="false"><span></span><span></span></button>
+          <div class="breadcrumbs"><span>Internal preparation</span><b>·</b><strong id="crumbTitle">Java Foundations</strong></div>
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search questions, concepts, code…" /></label>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy"><p class="eyebrow">JAVA INTERNAL EXAM · STUDY LIBRARY</p><h1>Understand it.<br /><em>Then write it.</em></h1><p>Every question from your material, organized into focused topics with the original problem details and ready-to-run Java solutions.</p><div class="hero-actions"><a href="#questions" class="primary-button">Start practicing <span>↓</span></a><button id="randomButton" class="text-button">Surprise me <span>↗</span></button></div></div>
+          <div class="hero-panel"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="code-float"><span>01</span><code>public class <b>Main</b> {<br />&nbsp;&nbsp;<i>// learn by doing</i><br />}</code></div><div class="hero-stat"><strong id="questionCount">45</strong><span>programs<br />to master</span></div></div>
+        </section>
+
+        <section class="quick-stats" aria-label="Study overview"><div><strong>09</strong><span>Study modules</span></div><div><strong>45</strong><span>Exam programs</span></div><div><strong>100%</strong><span>Original solutions</span></div><div><strong>Java 11</strong><span>Practice-ready code</span></div></section>
+
+        <section class="topic-intro" id="topicIntro"></section>
+        <section class="question-area" id="questions" aria-live="polite"></section>
+        <footer>Java Study Desk <span>•</span> Built for focused internal-exam preparation <span>•</span> Developed by Sakeeb</footer>
+      </main>
+    </div>
+    <template id="emptyTemplate"><div class="empty"><span>⌕</span><h2>No matching program yet</h2><p>Try a word from the problem statement, such as “array”, “date”, or “scanner”.</p></div></template>
+    <script src="study-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
